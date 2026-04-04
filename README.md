@@ -205,7 +205,10 @@ src/
 
 ## Author
 
-Developed by **Ashish Singh** (GitHub: [psykingko](https://github.com/psykingko))
+Developed by **Ashish Singh**
+
+- GitHub: [psykingko](https://github.com/psykingko)
+- LinkedIn: [ashishs190100](https://www.linkedin.com/in/ashishs190100/)
 
 This project was independently designed and developed.
 
