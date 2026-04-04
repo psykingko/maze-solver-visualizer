@@ -1,5 +1,7 @@
 # Maze Solver Visualizer
 
+**Live Demo**: [https://maze-solver-visualizer-six.vercel.app/](https://maze-solver-visualizer-six.vercel.app/)
+
 An interactive web app for visualizing pathfinding algorithms on a 20×20 grid. Watch BFS, DFS, and A\* explore your maze in real time, then compare their performance side by side.
 
 ---
@@ -36,7 +38,18 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 ### Run tests
 
 ```bash
-npm run test -- --run
+# Run all tests once
+npm test
+
+# Open the interactive Vitest UI
+npm run test:ui
+```
+
+### Build for production
+
+```bash
+npm run build
+npm run preview   # preview the production build locally
 ```
 
 ---
@@ -166,3 +179,24 @@ src/
 - DFS is great for seeing how dramatically a non-optimal algorithm can differ from BFS/A\* on the same maze.
 - A\* is almost always faster than BFS in terms of nodes visited — try it on the Spiral maze to see the difference.
 - On mobile, the grid scales down automatically. Tap cells to interact; drag to draw walls.
+
+---
+
+## Known Limitations
+
+- **No touch drag for wall drawing on mobile** — tap individual cells to toggle walls. Click-and-drag wall drawing requires a mouse.
+- **No path animation cancel** — once Visualize is clicked, the animation runs to completion. Use Reset Grid to start over.
+- **Metrics exclude animation time** — the time shown is pure algorithm computation time, not the visual playback duration.
+
+---
+
+## Available Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the development server         |
+| `npm run build`   | Build for production                 |
+| `npm run preview` | Preview the production build locally |
+| `npm test`        | Run all tests once                   |
+| `npm run test:ui` | Open the interactive Vitest UI       |
+| `npm run lint`    | Run ESLint                           |
