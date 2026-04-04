@@ -200,3 +200,17 @@ src/
 | `npm test`        | Run all tests once                   |
 | `npm run test:ui` | Open the interactive Vitest UI       |
 | `npm run lint`    | Run ESLint                           |
+
+---
+
+## Author
+
+Developed by **Ashish Singh** (GitHub: [psykingko](https://github.com/psykingko))
+
+This project was independently designed and developed.
+
+---
+
+## License
+
+[MIT](./LICENSE) © 2026 Ashish Singh (psykingko)
